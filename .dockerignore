@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+.gitignore
+.env*.local
+README.md
+walkthrough.md
+task.md
+implementation_plan.md
+Dockerfile
+docker-compose.yml
