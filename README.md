@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SmartPark AI 🚗
 
-## Getting Started
+SmartPark AI is a QR-based smart parking management system built using Next.js, Supabase, and AI-powered analytics. It digitizes traditional parking registers by allowing visitors to self-register through QR codes while enabling security personnel to manage vehicle entries, exits, and parking insights efficiently.
 
-First, run the development server:
+## Problem Statement
+
+Traditional parking systems rely on physical registers maintained by security guards. These registers can be misplaced, damaged, or difficult to search through when vehicle information is needed quickly.
+
+SmartPark AI solves this problem by providing a digital parking management solution with real-time vehicle tracking and intelligent analytics.
+
+## Features
+
+### Vehicle Registration
+
+* Register visitor information
+* Store vehicle details
+* Support for two-wheelers and four-wheelers
+* Automatic entry timestamp recording
+
+### QR-Based Self Registration
+
+* Visitors scan a QR code
+* Registration form opens instantly
+* Information is stored directly in the database
+* Eliminates manual register maintenance
+
+### Vehicle Search
+
+* Search by vehicle number
+* View vehicle details
+* View visitor information
+* Quick access for security personnel
+
+### Vehicle Exit Management
+
+* Mark vehicles as exited
+* Store exit timestamps
+* Track active and exited vehicles
+
+### Dashboard Analytics
+
+* Total vehicles count
+* Active vehicles count
+* Exited vehicles count
+* Today's visitor count
+
+### AI Parking Insights
+
+* Analyze parking activity
+* Generate parking summaries
+* Detect traffic trends
+* Provide operational insights
+
+## Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* Tailwind CSS
+
+### Backend
+
+* Next.js API Routes
+
+### Database
+
+* Supabase
+
+### AI
+
+* Google Gemini API
+
+### Additional Libraries
+
+* qrcode.react
+
+
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+cd smartpark-ai
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Enhancements
 
-## Learn More
+* OCR-based number plate recognition
+* Local LLM integration using Ollama
+* Visitor notification system
+* Parking slot allocation
+* Admin authentication
+* Email and SMS alerts
+* Real-time parking occupancy monitoring
 
-To learn more about Next.js, take a look at the following resources:
+## Impact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+SmartPark AI eliminates dependency on physical parking registers, improves record management, enables faster vehicle lookup, and provides AI-driven insights to enhance parking operations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed by Disha Chauhan
